@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Maximum Consecutive </h1>
+<Script>
+    var size =prompt("Enter the size of array");
+    var arr =[];
+
+    for(let i=0;i<=size;i++)
+    {
+        arr[i]=prompt("Enter the numbers in 0's and 1's");
+
+    }
+        var count =0;
+        var result =0;
+        for (let i=0;i<=size;i++){
+            if (a[i]===1){
+            count++;
+        result=math.max(count,result);
+
+            }
+            else{
+                count=0;
+            }
+    }
+    document.write(result+"<br>");
+    
+
+    
+    
+</Script>
+
+</body>
+</html>

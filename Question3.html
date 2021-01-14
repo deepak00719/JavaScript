@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+Enter Elementes of array:<input type="number" id="a">
+<button onclick="add()">Add</button>
+
+
+<p id="c">Array:</p>
+
+<p id="d">Duplicate Elementes are:</p>  
+<button onclick="repeat()">Check</button> 
+
+
+
+
+    <script>
+       var i=0;
+       var arr=[];
+       function add()
+       {
+           document.getElementById("c").innerHTML="Array :"
+      arr[i] = document.getElementById("a").value;
+      i++;
+      document.getElementById("a").value="";
+      document.getElementById("c").innerHTML+=arr;
+     }
+        repeat()
+        {
+            for(let i = 0; i < arr.length; i++) 
+            {  
+            for(let j = i + 1; j < arr.length; j++)
+             {  
+                if(arr[i] === arr[j])
+                {
+                    document.getElementById("d").innerHTML+=arr[j];
+                }
+            }
+        }
+    }
+
+
+        
+
+
+    </script>
+</body>
+</html>
